@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:     tft-mintypi
+version:        1.3 beta
+author:         Will.I.Am
+license:        creative commons CC-BY-NC-SA
+credit:         controller artwork originally from Carbon theme, theme based on tft by Anthony
+-->
+<theme>
+   <formatVersion>4</formatVersion>
+   <view name="system">
+      <helpsystem name="help">
+         <pos>-1 -1</pos>
+      </helpsystem>
+
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <tile>true</tile>
+         <path>./_inc/images/background.png</path>
+         <zIndex>1</zIndex>
+      </image>
+
+      <image name="controller" extra="true">
+        <origin>0.5 0.1</origin>
+        <pos>0.5 0.184</pos>
+        <maxSize>0.6 0.6</maxSize>
+        <zIndex>5</zIndex>
+      </image>
+
+      <carousel name="systemcarousel">
+         <type>horizontal</type>
+         <pos>0 0.765</pos>
+         <size>1 0.0775</size>
+         <color>00000000</color>
+         <logoSize>0.5625 0.075</logoSize>
+         <logoScale>0.8</logoScale>
+         <maxLogoCount>1</maxLogoCount>
+         <zIndex>5</zIndex>
+      </carousel>
+
+      <text name="systemInfo">
+         <backgroundColor>00000000</backgroundColor>
+         <pos>0 0.865</pos>
+         <color>555555</color>
+         <fontPath>./_inc/fonts/Cabin-Bold-TTF.ttf</fontPath>
+         <fontSize>0.055</fontSize>
+         <zIndex>5</zIndex>
+      </text>
+   </view>
+
+   <view name="basic,detailed,video">
+      <image name="logo">
+         <origin>.5 0</origin>
+         <pos>0.5 0.086</pos>
+         <maxSize>0.5625 0.055</maxSize>
+      </image>
+
+      <image name="gamelist_background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <tile>true</tile>
+         <path>./_inc/images/background-gamelist.png</path>
+         <zIndex>30</zIndex>
+      </image>
+
+      <textlist name="gamelist">
+         <pos>0.05 0.18</pos>
+         <size>0.78 0.8</size>
+         <!--<selectorColor>000000</selectorColor>-->
+         <selectedColor>21de3e</selectedColor>
+         <primaryColor>eaeaea</primaryColor>
+         <secondaryColor>eaeaea</secondaryColor>
+         <fontPath>./_inc/fonts/Cabin-Bold-TTF.ttf</fontPath>
+         <fontSize>0.0683333333333333</fontSize>
+         <scrollSound>./_inc/sounds/select.wav</scrollSound>
+         <forceUppercase>1</forceUppercase>
+         <alignment>left</alignment>
+         <zIndex>40</zIndex>
+      </textlist>
+
+      <helpsystem name="help">
+         <pos>-1 -1</pos>
+      </helpsystem>
+   </view>
+
+   <view name="detailed,video">
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
+         <pos>1 1</pos>
+      </text>
+
+      <datetime name="md_releasedate,md_lastplayed">
+         <pos>1 1</pos>
+      </datetime>
+
+      <rating name="md_rating">
+         <pos>1 1</pos>
+      </rating>
+
+      <image name="logo">
+         <origin>.5 0</origin>
+         <pos>0.36 0.086</pos>
+         <maxSize>0.5625 0.055</maxSize>
+         <zIndex>40</zIndex>
+      </image>
+
+      <image name="md_image">
+         <origin>0.62 0</origin>
+         <pos>1 0</pos>
+         <size>0 1</size>
+         <zIndex>10</zIndex>
+      </image>
+
+      <image name="media_background" extra="true">
+         <origin>0 0</origin>
+         <pos>0.6625 0</pos>
+         <size>0.3375 1</size>
+         <path>./_inc/images/no-image.png</path>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image name="border" extra="true">
+         <origin>0 0</origin>
+         <pos>0.65625 0</pos>
+         <size>0.00625 1</size>
+         <!--<size>0.00625 0.00625</size>-->
+         <path>./_inc/images/black.png</path>
+         <color>000000</color>
+         <zIndex>30</zIndex>
+      </image>
+
+      <image name="gamelist_background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.65625 1</size>
+         <tile>true</tile>
+         <path>./_inc/images/background-detail.png</path>
+         <zIndex>30</zIndex>
+      </image>
+
+      <textlist name="gamelist">
+         <pos>0.05 0.18</pos>
+         <size>0.57 0.8</size>
+         <selectedColor>21de3e</selectedColor>
+         <primaryColor>eaeaea</primaryColor>
+         <secondaryColor>eaeaea</secondaryColor>
+         <fontPath>./_inc/fonts/Cabin-Bold-TTF.ttf</fontPath>
+         <fontSize>0.0683333333333333</fontSize>
+         <scrollSound>./_inc/sounds/select.wav</scrollSound>
+         <forceUppercase>1</forceUppercase>
+         <horizontalMargin>0.038</horizontalMargin>
+         <alignment>left</alignment>
+         <zIndex>40</zIndex>
+      </textlist>
+
+      <helpsystem name="help">
+         <pos>-1 -1</pos>
+      </helpsystem>
+
+   </view>
+
+   <view name="video">
+      <image name="md_marquee">
+         <origin>0 0</origin>
+         <pos>1 1</pos>
+      </image>
+
+      <image name="md_image">
+          <pos>1 1</pos>
+          <origin>0 0</origin>
+      </image>
+
+      <video name="md_video">
+         <origin>0.62 0</origin>
+         <pos>1 0</pos>
+         <maxSize>1 1</maxSize>
+         <delay>0.2</delay>
+         <default>./_inc/videos/static.mp4</default>
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <showSnapshotDelay>false</showSnapshotDelay>
+         <zIndex>10</zIndex>
+      </video>
+
+   </view>
+</theme>
